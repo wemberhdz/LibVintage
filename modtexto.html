@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Vintage CSS</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    
+</head>
+<body class="bg-secondary">
+  <section class="container-lg  bg-light text-center border">
+    <div class="row align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html">Mi libreria CSS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="botones.html">Botones</a></li>
+                  <li><a class="dropdown-item" href="formulario.html">Formularios</a></li>
+                  <li><a class="dropdown-item" href="tarjeta.html">Tarjetas</a></li>
+                  <li><a class="dropdown-item" href="alertas.html">Alertas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="navbar.html">Navabars</a></li>
+                  <li><a class="dropdown-item" href="bages.html">badges</a></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="modtexto.html">Modificaciones de texto</a></li>
+                  <li><a class="dropdown-item" href="sombras.html">Sombras</a></li>
+                 
+                  <li><a class="dropdown-item" href="moverobj.html">Mover elementos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 
+                  <li><a class="dropdown-item" href="oculobj.html">Ocultar elementos</a></li>
+                  <li><a class="dropdown-item" href="bgcolor.html">Colores de fondo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </section>
+
+    <section class="container-lg p-4 bg-light my-2">
+      <div class="row ">
+          <div class="col align-items-star card p-4 border shadow">
+              <h1 class="display-4">Modoficadores de texto</h1>
+              <p class="lead">Documentación y ejemplos de utilidades de texto comunes.</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="container-lg card p-4">
+        <div class="row align-items-center ">
+          <div class="col card p-3">
+            <p>Transformacion de texto</p>
+            <p>nsforma texto en componentes con clases de capitalización de texto.</p>
+                <code> 
+                &lt;p class="text-lowercase">Texto en minúsculas.&lt;/p> <br>
+                &lt;p class="text-uppercase">Texto en mayúsculas.&lt;/p> <br>
+                &lt;p class="text-capitalize">Texto con primEras letras en mayúsculas.&lt;/p>
+                </code>
+          </div>
+          <div class="col text-center p-3">
+            <section class="jumbotron text-center">
+                <p class="text-lowercase">Texto en minúsculas.</p>
+                <p class="text-uppercase">Texto en mayúsculas.</p>
+                <p class="text-capitalize">Texto con primEras letras en mayúsculas.</p>
+          </section>
+          </div>
+          </div>
+          </section>
+
+          <section class="container-lg card p-4">
+            <div class="row align-items-center ">
+              <div class="col card p-3">
+                <p>Tamanio de fuente</p>
+                <p>Cambia rápidamente el font-size del texto. Mientras que nuestras clases de encabezado (p. ej., .h1–.h6) aplican font-size, 
+                    font-weight y line-height, estas utilidades solo aplican font-size. El tamaño de estas utilidades coincide con los 
+                    elementos de encabezado de HTML, por lo que a medida que aumenta el número, su tamaño disminuye.</p>
+                    <code> 
+                        &lt;p class="fs-1">Texto .fs-1&lt;/p><br>
+                        &lt;p class="fs-2">Texto .fs-2&lt;/p><br>
+                        &lt;p class="fs-3">Texto .fs-3&lt;/p><br>
+                        &lt;p class="fs-4">Texto .fs-4&lt;/p><br>
+                        &lt;p class="fs-5">Texto .fs-5&lt;/p><br>
+                        &lt;p class="fs-6">Texto .fs-6&lt;/p>
+                    </code>
+              </div>
+              <div class="col text-center p-3">
+                <section class="jumbotron text-center">
+                    <p class="fs-1">Texto .fs-1</p>
+                    <p class="fs-2">Texto .fs-2</p>
+                    <p class="fs-3">Texto .fs-3</p>
+                    <p class="fs-4">Texto .fs-4</p>
+                    <p class="fs-5">Texto .fs-5</p>
+                    <p class="fs-6">Texto .fs-6</p>
+              </section>
+              </div>
+              </div>
+              </section>
+
+        <section class="container-lg card p-4">
+                <div class="row align-items-center ">
+                  <div class="col card p-3">
+                    <p>Peso de fuente y cursiva</p>
+                    <p>Cambia rápidamente el font-weight o el font-style del texto con estas utilidades. Las utilidades font-style 
+                        se abrevian como .fst-* y las utilidades font-weight se abrevian como .fw-*.</p>
+                        <code> 
+                            &lt;p class="fw-bold">Texto en negrita&lt;/p><br>
+                            &lt;p class="fw-bolder">Texto en negrita (relativo al elemento principal).&lt;/p><br>
+                            &lt;p class="fw-normal">Texto de peso normal.&lt;/p><br>
+                            &lt;p class="fw-light">Texto liviano.&lt;/p><br>
+                            &lt;p class="fw-lighter">Texto más ligero(en relación con el elemento principal).&lt;/p><br>
+                            &lt;p class="fst-italic">Texto en cursiva.&lt;/p><br>
+                            &lt;p class="fst-normal">Texto con estilo de fuente normal&lt;/p>
+                        </code>
+                  </div>
+                  <div class="col text-center p-3">
+                    <section class="jumbotron text-center">
+                        <p class="fw-bold">Texto en negrita.</p>
+                        <p class="fw-bolder">Texto en negrita (relativo al elemento principal).</p>
+                        <p class="fw-normal">Texto de peso normal.</p>
+                        <p class="fw-light">Texto liviano.</p>
+                        <p class="fw-lighter">Texto más ligero (en relación con el elemento principal).</p>
+                        <p class="fst-italic">Texto en cursiva.</p>
+                        <p class="fst-normal">Texto con estilo de fuente normal</p>
+                  </section>
+                  </div>
+                  </div>
+        </section>
+        
+        <section class="container-lg card p-4">
+            <div class="row align-items-center ">
+              <div class="col card p-3">
+                <p>Decoracion y texto</p>
+                <p>Decora texto en componentes con clases de decoración de texto.</p>
+                    <code> 
+                        &lt;p class="text-decoration-underline">Este texto tiene una línea debajo.&lt;/p> <br>
+                        &lt;p class="text-decoration-line-through">Este texto tiene una línea que lo atraviesa.&lt;/p><br>
+                        &lt;a href="#" class="text-decoration-none">Se ha quitado la decoración de texto de este enlace&lt;/a>
+                    </code>
+              </div>
+              <div class="col text-center p-3">
+                <section class="jumbotron text-center">
+                    <p class="text-decoration-underline">Este texto tiene una línea debajo.</p>
+                    <p class="text-decoration-line-through">Este texto tiene una línea que lo atraviesa.</p>
+                    <a href="#" class="text-decoration-none">Se ha quitado la decoración de texto de este enlace</a>
+              </section>
+              </div>
+              </div>
+    </section>
+
+<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

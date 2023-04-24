@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Vintage CSS</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    
+</head>
+<body class="bg-secondary">
+  <section class="container-lg  bg-light text-center border">
+    <div class="row align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html">Mi libreria CSS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="botones.html">Botones</a></li>
+                  <li><a class="dropdown-item" href="formulario.html">Formularios</a></li>
+                  <li><a class="dropdown-item" href="tarjeta.html">Tarjetas</a></li>
+                  <li><a class="dropdown-item" href="alertas.html">Alertas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="navbar.html">Navabars</a></li>
+                  <li><a class="dropdown-item" href="bages.html">badges</a></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="modtexto.html">Modificaciones de texto</a></li>
+                  <li><a class="dropdown-item" href="sombras.html">Sombras</a></li>
+                  <li><a class="dropdown-item" href="moverobj.html">Mover elementos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="oculobj.html">Ocultar elementos</a></li>
+                  <li><a class="dropdown-item" href="bgcolor.html">Colores de fondo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </section>
+
+    <section class="container-lg p-4 bg-light my-2">
+      <div class="row ">
+          <div class="col align-items-star card p-4 border">
+              <h1 class="display-4">Tarjetas (Cards)</h1>
+              <p class="lead">Las tarjetas se construyen con la menor cantidad de marcado y estilos posible, 
+                pero aun así logran ofrecer una tonelada de control y personalización. Construidos con flexbox, 
+                ofrecen una fácil alineación y se combinan bien con otros componentes de Bootstrap. No tienen 
+                margin por defecto, así que usa utilidades de espaciado según sea necesario..</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="container-lg my-4 card p-4">
+      <div class="row align-items-center ">
+      <div class="col card p-3 border shadow">
+        <p class="lead">A continuación se muestra un ejemplo de una tarjeta básica con contenido mixto y un ancho fijo. 
+          Las tarjetas no tienen un ancho fijo para comenzar, por lo que naturalmente llenarán todo el ancho de su elemento padre. 
+          Esto se puede personalizar fácilmente con nuestras diversas:</p>
+        <code> 
+
+          &lt;div class="card" style="width: 18rem;"> <br>
+            &lt;img src="..." class="card-img-top" alt="..."> <br>
+            &lt;div class="card-body"> <br>
+              &lt;h5 class="card-title">Título de la tarjeta&lt;/h5> <br>
+              &lt;p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.&lt;/p> <br>
+              &lt;a href="#" class="btn btn-primary">Ir a algún lugar&lt;/a> <br>
+            &lt;/div> <br>
+          &lt;/div>
+          
+          </code>
+      </div>
+      
+      <div class="col text-center">
+        <section class="jumbotron p-3 " >
+          <div class="card text-white bg-dark" style="width: 18rem; ">
+            <img src="https://img.freepik.com/vector-premium/archivos-png-fondo-vector-transparente-fondo-png_302321-1276.jpg?w=2000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Título de la tarjeta</h5>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+            </div>
+          </div>
+      </section>
+      </div>
+      </div>
+      </section>
+
+      <section class="container-lg my-4 card p-4">
+        <div class="row align-items-center">
+        <div class="col card p-3 border shadow">
+          <p class="lead">Los títulos de las cartas se usan agregando .card-title a una etiqueta &lt;h*>. 
+            De la misma manera, los enlaces se agregan y colocan uno al lado del otro agregando .card-link a una etiqueta &lt;a>. <br>
+            <br>
+            Los subtítulos se usan agregando un .card-subtitle a una etiqueta &lt;h*>. Si los elementos .card-title y 
+              .card-subtitle se colocan en un elemento .card-body, el título y el subtítulo de la tarjeta se alinearán muy bien.</p>
+          <code> 
+            &lt;div class="card" style="width: 18rem;"> <br>
+              &lt;div class="card-body"> <br>
+                &lt;h5 class="card-title">Título de la tarjeta&lt;/h5> <br>
+                &lt;h6 class="card-subtitle mb-2 text-muted">Subtítulo de la tarjeta&lt;/h6> <br>
+                &lt;p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.&lt;/p> <br>
+                &lt;a href="#" class="card-link">Enlace de tarjeta&lt;/a> <br>
+                &lt;a href="#" class="card-link">Otro enlace&lt;/a> <br>
+              &lt;/div> <br>
+              &lt;/div>
+            </code>
+        </div>
+        
+        <div class="col">
+          <div class="card text-white bg-secondary" style="width: 18rem;">
+            <div class="card-body ">
+              <h5 class="card-title">Título de la tarjeta</h5>
+              <h6 class="card-subtitle mb-4 text-muted">Subtítulo de la tarjeta</h6>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+              <a href="#" class="card-link">Enlace de tarjeta</a>
+              <a href="#" class="card-link">Otro enlace</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>
+  
+<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

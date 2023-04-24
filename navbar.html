@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Vintage CSS</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    
+</head>
+<body class="bg-secondary">
+  <section class="container-lg  bg-light text-center border">
+    <div class="row align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html">Mi libreria CSS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="botones.html">Botones</a></li>
+                  <li><a class="dropdown-item" href="formulario.html">Formularios</a></li>
+                  <li><a class="dropdown-item" href="tarjeta.html">Tarjetas</a></li>
+                  <li><a class="dropdown-item" href="alertas.html">Alertas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="navbar.html">Navabars</a></li>
+                  <li><a class="dropdown-item" href="bages.html">badges</a></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="modtexto.html">Modificaciones de texto</a></li>
+                  <li><a class="dropdown-item" href="sombras.html">Sombras</a></li>
+                  <li><a class="dropdown-item" href="moverobj.html">Mover elementos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="oculobj.html">Ocultar elementos</a></li>
+                  <li><a class="dropdown-item" href="bgcolor.html">Colores de fondo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </section>
+
+    <section class="container-lg p-4 bg-light my-2">
+      <div class="row ">
+          <div class="col align-items-star card p-4 border shadow">
+              <h1 class="display-4">Barras de navegacion (Navbar)</h1>
+              <p class="lead">La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base .nav hasta 
+                los estados active y disabled. Cambia las clases modificadoras para cambiar entre cada estilo.
+
+                El componente base .nav está construido con flexbox y proporciona una base sólida para construir todo tipo de 
+                componentes de navegación. Incluyen algunas sobrescrituras de estilo (para trabajar con listas), algo de padding 
+                de enlaces para áreas de acceso más grandes y estilo básico para disabled.</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="container-lg my-4 card p-4">
+        <div class="row align-items-center">
+        <div class="col card p-3 border shadow">
+          <p class="lead">El componente base .nav no incluye ningún estado .active. Los siguientes ejemplos incluyen la 
+            clase, principalmente para demostrar que esta clase en particular no activa ningún estilo especial.
+
+            Para transmitir el estado activo a las tecnologías de asistencia, usa el atributo aria-current, usando 
+            el valor page para la página actual, o true para el elemento actual en un conjunto.</p>
+            
+          <code> 
+            &lt;ul class="nav  bg-dark"> <br>
+                &lt;li class="nav-item "> <br>
+                    &lt;a class="nav-link active" aria-current="page" href="#">Activo&lt;/a><br>
+                &lt;/li><br>
+                &lt;li class="nav-item"><br>
+                    &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                &lt;/li><br>
+                &lt;li class="nav-item"><br>
+                    &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                &lt;/li><br>
+                &lt;li class="nav-item "><br>
+                    &lt;a class="nav-link disabled">Deshabilitado&lt;/a><br>
+                &lt;/li><br>
+            &lt;/ul>
+            </code>
+        </div>
+        <div class="col ">
+          <section class="jumbotron text-center p-3 ">
+            <ul class="nav  bg-info">
+                <li class="nav-item  ">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link disabled">Deshabilitado</a>
+                </li>
+            </ul>
+        </section>
+        </div>
+        </div>
+        </section>
+
+        <section class="container-lg my-4 card p-4">
+            <div class="row align-items-center">
+            <div class="col card p-3 border shadow">
+                <h4>Tabs</h4>
+              <p class="lead">Toma la navegación básica de arriba y agrega la clase .nav-tabs para generar una interfaz con pestañas. 
+                Úsalos para crear regiones tabulables</p>
+                
+              <code> 
+                &lt;ul class="nav-tabs  bg-dark"> <br>
+                    &lt;li class="nav-item "> <br>
+                        &lt;a class="nav-link active" aria-current="page" href="#">Activo&lt;/a><br>
+                    &lt;/li><br>
+                    &lt;li class="nav-item"><br>
+                        &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                    &lt;/li><br>
+                    &lt;li class="nav-item"><br>
+                        &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                    &lt;/li><br>
+                    &lt;li class="nav-item "><br>
+                        &lt;a class="nav-link disabled">Deshabilitado&lt;/a><br>
+                    &lt;/li><br>
+                &lt;/ul>
+                </code>
+            </div>
+            <div class="col ">
+              <section class="jumbotron text-center p-3">
+                <ul class="nav nav-tabs bg-info">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Enlace</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Deshabilitado</a>
+                    </li>
+                  </ul>
+            </section>
+            </div>
+            </div>
+            </section>
+            <section class="container-lg my-4 card p-4">
+                <div class="row align-items-center">
+                <div class="col card p-3 border shadow">
+                    <h4>Pills</h4>
+                  <p class="lead">El mismo HTML, pero usa .nav-pills en su lugar:</p>
+                    
+                  <code> 
+                    &lt;ul class="nav-pills  bg-dark"> <br>
+                        &lt;li class="nav-item "> <br>
+                            &lt;a class="nav-link active" aria-current="page" href="#">Activo&lt;/a><br>
+                        &lt;/li><br>
+                        &lt;li class="nav-item"><br>
+                            &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                        &lt;/li><br>
+                        &lt;li class="nav-item"><br>
+                            &lt;a class="nav-link" href="#">Enlace&lt;/a><br>
+                        &lt;/li><br>
+                        &lt;li class="nav-item "><br>
+                            &lt;a class="nav-link disabled">Deshabilitado&lt;/a><br>
+                        &lt;/li><br>
+                    &lt;/ul>
+                    </code>
+                </div>
+                <div class="col ">
+                  <section class="jumbotron text-center p-3">
+                    <ul class="nav nav-pills bg-info">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Enlace</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Enlace</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Deshabilitado</a>
+                        </li>
+                      </ul>
+                </section>
+                </div>
+                </div>
+                </section>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

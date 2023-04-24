@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Vintage CSS</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    
+</head>
+<body class="bg-secondary">
+    <section class="container-lg  bg-light text-center border">
+        <div class="row align-items-center">
+          <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="index.html">Mi libreria CSS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto text-center">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Elementos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="botones.html">Botones</a></li>
+                      <li><a class="dropdown-item" href="formulario.html">Formularios</a></li>
+                      <li><a class="dropdown-item" href="tarjeta.html">Tarjetas</a></li>
+                      <li><a class="dropdown-item" href="alertas.html">Alertas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Elementos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="navbar.html">Navabars</a></li>
+                      <li><a class="dropdown-item" href="bages.html">badges</a></li>
+                      <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Personalizacion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="modtexto.html">Modificaciones de texto</a></li>
+                      <li><a class="dropdown-item" href="sombras.html">Sombras</a></li>
+                      <li><a class="dropdown-item" href="moverobj.html">Mover elementos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Personalizacion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="oculobj.html">Ocultar elementos</a></li>
+                      <li><a class="dropdown-item" href="bgcolor.html">Colores de fondo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        </section>
+    
+        <section class="container-lg p-4 bg-light my-2">
+            <div class="row ">
+                <div class="col align-items-star card p-4 border shadow">
+                    <h1 class="display-4">Alertas (Alert)</h1>
+                    <p class="lead">Las alertas están disponibles para cualquier longitud de texto, así como un botón de cierre opcional. 
+                        Para un estilo adecuado, usa una de las ocho clases contextuales obligatorias (por ejemplo, .alert-success). Para 
+                        el botón de cierre en línea, usa el complemento JavaScript de alertas.</p>
+                </div>
+            </div>
+          </section>
+    
+        <section class="container-lg card p-4 border my-2">
+            <div class="row align-items-center ">
+              <div class="col card p-3 border">
+                <p>ejemplos:</p>
+                    <code> 
+                        &lt;div class="alert alert-primary" role="alert"> <br>
+                            Una simple alerta primary: ¡échale un vistazo! <br>
+                        &lt;/div> <br>
+                            &lt;div class="alert alert-secondary" role="alert"> <br>
+                            Una simple alerta secondary: ¡échale un vistazo! <br>
+                        &lt;/div> <br>
+                            &lt;div class="alert alert-success" role="alert"> <br>
+                            Una simple alerta success: ¡échale un vistazo! <br> 
+                         &lt;/div> <br>
+                            &lt;div class="alert alert-danger" role="alert"> <br>
+                            Una simple alerta danger: ¡échale un vistazo! <br>
+                        &lt;/div> <br>
+                            &lt;div class="alert alert-warning" role="alert"> <br>
+                            Una simple alerta warning: ¡échale un vistazo! <br>
+                        &lt;/div> <br> 
+                            &lt;div class="alert alert-info" role="alert"> <br>
+                            Una simple alerta info: ¡échale un vistazo! <br>
+                        &lt;/div> <br>
+                            &lt;div class="alert alert-light" role="alert"> <br>
+                            Una simple alerta light: ¡échale un vistazo! <br>
+                        &lt;/div> <br>
+                            &lt;div class="alert alert-dark" role="alert"> <br>
+                            Una simple alerta dark: ¡échale un vistazo! <br>
+                        &lt;/div>
+                    </code>
+              </div>
+              <div class="col text-center p-3">
+                <section class="jumbotron text-center">
+                    <div class="alert alert-primary" role="alert">
+                        Una simple alerta primary: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-secondary" role="alert">
+                        Una simple alerta secondary: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-success" role="alert">
+                        Una simple alerta success: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-danger" role="alert">
+                        Una simple alerta danger: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-warning" role="alert">
+                        Una simple alerta warning: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-info" role="alert">
+                        Una simple alerta info: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-light" role="alert">
+                        Una simple alerta light: ¡échale un vistazo!
+                      </div>
+                      <div class="alert alert-dark" role="alert">
+                        Una simple alerta dark: ¡échale un vistazo!
+                      </div>
+              </section>
+              </div>
+              </div>
+              </section>
+
+             <section class="container-lg card p-4 border">
+                <div class="row align-items-center ">
+                  <div class="col card p-3 border">
+                    <p>Color de enlace:</p>
+                    <p>Utiliza la clase de utilidad .alert-link para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.</p>
+                        <code> 
+                            &lt;div class="alert alert-primary" role="alert"> <br>
+                                Una simple alerta primary con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres. <br>
+                                &lt;/div><br>
+                                &lt;div class="alert alert-secondary" role="alert"><br>
+                                Una simple alerta secondary con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                            &lt;/div><br>
+                            &lt;div class="alert alert-success" role="alert"><br>
+                                Una simple alerta success con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                                &lt;/div><br>
+                                &lt;div class="alert alert-danger" role="alert"><br>
+                                Una simple alerta danger con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                            &lt;/div><br>
+                            &lt;div class="alert alert-warning" role="alert"><br>
+                                Una simple alerta warning con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                                &lt;/div><br>
+                                &lt;div class="alert alert-info" role="alert"><br>
+                                Una simple alerta info con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                            &lt;/div><br>
+                            &lt;div class="alert alert-light" role="alert"><br>
+                                Una simple alerta light con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                                &lt;/div><br>
+                                &lt;div class="alert alert-dark" role="alert"><br>
+                                Una simple alerta dark con &lt;a href="#" class="alert-link">un enlace de ejemplo&lt;/a>. Dale un clic si quieres.<br>
+                            &lt;/div>
+                        </code>
+                  </div>
+                  <div class="col text-center p-3">
+                    <section class="jumbotron text-center">
+                        <div class="alert alert-primary" role="alert">
+                            Una simple alerta primary con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-secondary" role="alert">
+                            Una simple alerta secondary con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-success" role="alert">
+                            Una simple alerta success con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-danger" role="alert">
+                            Una simple alerta danger con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-warning" role="alert">
+                            Una simple alerta warning con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-info" role="alert">
+                            Una simple alerta info con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-light" role="alert">
+                            Una simple alerta light con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                          <div class="alert alert-dark" role="alert">
+                            Una simple alerta dark con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+                          </div>
+                  </section>
+                  </div>
+                  </div>
+                  </section>
+    
+  
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

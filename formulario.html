@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Vintage CSS</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    
+    
+    
+</head>
+<body class="bg-secondary">
+  <section class="container-lg  bg-light text-center border">
+    <div class="row align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-white">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html">Mi libreria CSS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="botones.html">Botones</a></li>
+                  <li><a class="dropdown-item" href="formulario.html">Formularios</a></li>
+                  <li><a class="dropdown-item" href="tarjeta.html">Tarjetas</a></li>
+                  <li><a class="dropdown-item" href="alertas.html">Alertas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elementos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="navbar.html">Navabars</a></li>
+                  <li><a class="dropdown-item" href="bages.html">badges</a></li>
+                  <li><a class="dropdown-item" href="container.html">Containers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="modtexto.html">Modificaciones de texto</a></li>
+                  <li><a class="dropdown-item" href="sombras.html">Sombras</a></li>
+                  <li><a class="dropdown-item" href="moverobj.html">Mover elementos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personalizacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="oculobj.html">Ocultar elementos</a></li>
+                  <li><a class="dropdown-item" href="bgcolor.html">Colores de fondo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </section>
+
+<section class="container-lg p-4 bg-light my-2">
+      <div class="row ">
+          <div class="col align-items-star card p-4">
+              <h1 class="display-4">Formularios (Form)</h1>
+              <p class="lead">Ejemplos y pautas de uso para los estilos de controles de formulario, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.</p>
+          </div>
+      </div>
+</section>
+
+<section class="container-lg my-2 card p-4 ">
+  <div class="row align-items-center ">
+  <div class="col card p-3 shadow">
+    <p class="lead">Ejemplo:</p>
+    <code> 
+      &lt;div class="mb-3"><br>
+      &lt;label for="exampleFormControlInput1" class="form-label">Correo electrónico&lt;/label><br>
+      &lt;input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
+      &lt;/div><br>
+      &lt;div class="mb-3"><br>
+      &lt;label for="exampleFormControlTextarea1" class="form-label">Ejemplo de textarea&lt;/label><br>
+      &lt;textarea class="form-control" id="exampleFormControlTextarea1" rows="3">&lt;/textarea><br>
+      &lt;/div>
+      
+      </code>
+  </div>
+  <div class="col ">
+    <section class="jumbotron p-3 border">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Ejemplo de textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-info">Ingresar</button>
+      </div>
+  </section>
+  </div>
+  </div>
+  </section>
+
+  <section class="container-lg my-4 card p-4">
+    <div class="row align-items-center">
+    <div class="col card p-3 shadow">
+      <p class="lead">Por defecto:</p>
+      <p>Los menús &lt;select> personalizados solo necesitan una clase personalizada, 
+        .form-select para activar los estilos personalizados. Los estilos personalizados 
+        están limitados a la apariencia inicial de &lt;select> y no pueden modificar &lt;option> 
+          debido a las limitaciones del navegador.</p><hr>
+      <code> 
+        &lt;select class="form-select" aria-label="Default select example"><br>
+        &lt;option selected>Abre este menú select&lt;/option> <br>
+        &lt;option value="1">Uno&lt;/option> <br>
+        &lt;option value="2">Dos&lt;/option> <br>
+        &lt;option value="3">Tres&lt;/option> <br>
+        &lt;/select>
+        </code>
+    </div>
+
+    <div class="col ">
+      <section class="jumbotron p-3 border">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Abre este menú select</option>
+          <option value="1">Uno</option>
+          <option value="2">Dos</option>
+          <option value="3">Tres</option>
+        </select>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <section class="container-lg my-4 card p-4">
+      <div class="row align-items-center">
+      <div class="col card p-3 shadow">
+        <p class="lead">Un ejemplo sencillo:</p>
+        <code> 
+          <form>
+            &lt;div class="mb-3"> <br>
+              &lt;label for="exampleInputEmail1" class="form-label">Correo electrónico&lt;/label> <br>
+              &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> <br>
+              &lt;div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.&lt;/div> <br>
+            &lt;/div> <br>
+            &lt;div class="mb-3"> <br>
+              &lt;label for="exampleInputPassword1" class="form-label">Contraseña&lt;/label> <br>
+              &lt;input type="password" class="form-control" id="exampleInputPassword1"> <br>
+            &lt;/div> <br>
+            &lt;div class="mb-3 form-check"> <br>
+              &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"> <br>
+              &lt;label class="form-check-label" for="exampleCheck1">Verificado&lt;/label> <br>
+            &lt;/div>
+            &lt;button type="submit" class="btn btn-primary">Enviar&lt;/button>
+            &lt;/form>
+          </code>
+      </div>
+  
+      <div class="col ">
+        <section class="jumbotron p-3 border">
+          <form>
+            <div class="mb-3 ">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Verificado</label>
+            </div>
+            <button type="submit" class="btn btn-info">Enviar</button>
+          </form>
+      </section>
+      </div>
+      </div>
+      </section>
+  
+<script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
