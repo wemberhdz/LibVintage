@@ -1,0 +1,165 @@
+
+$primary: #e9d5da;
+$secondary: #8fbdd3;
+$success: #a1ef88;
+$info: #4fc3f0;
+$warning: #f2985b;
+$danger: #9d5353;
+$light: #ede6db;
+$dark: #94918f;
+
+$blue: #0d51aa;
+$indigo: #6b0daa;
+$purple: #8b0daa;
+$pink: #cc119d;
+$red: #aa0d0d;
+$orange: #da8311;
+$yellow: #f0db1c;
+$green: #0daa27;
+$teal: #17577c;
+$cyan: #00FFFF;
+$white: #fdfdfd;
+$gray-600: #808080;
+$gray-800: #5A5A5A;
+$black: #000000;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+// FORMULARIOS
+$input-border-color: #700101; 
+// Tamaño de fuente de los formularios
+$input-font-size: 15px;
+
+// Espacio entre los elementos del formulario
+$input-margin-bottom: 10px;
+
+// Color de fondo del formulario
+$form-bg: #1541d3;
+
+// Color de texto del formulario
+$form-text-color: #b80c0c;
+
+//BORDES
+$border-width: 2px; // Cambia el ancho del borde a 2 píxeles
+$border-color: #333; // Cambia el color del borde a negro
+$border-radius: 4px; // Cambia el radio del borde a 4 píxeles
+
+//texto
+$color-texto: #fdfdfd;
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// stylelint-enable value-keyword-case
+$font-family-base:            var(--#{$variable-prefix}font-sans-serif);
+$font-family-code:            var(--#{$variable-prefix}font-monospace);
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null;
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+ 
+//sombras
+$box-shadow:                  0 .5rem 1rem rgba($black, .15);
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
+
+//bordes
+$border-width:                1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+);
+
+$border-color:                $gray-600;
+$border-radius:               .25rem;
+$border-radius-sm:            .2rem;
+$border-radius-lg:            .3rem;
+$border-radius-pill:          50rem;
+
+//alerts
+$alert-padding-y:               $spacer;
+$alert-padding-x:               $spacer;
+$alert-margin-bottom:           1rem;
+$alert-border-radius:           $border-radius;
+$alert-link-font-weight:        $font-weight-bold;
+$alert-border-width:            $border-width;
+$alert-bg-scale:                -80%;
+$alert-border-scale:            -70%;
+$alert-color-scale:             40%;
+$alert-dismissible-padding-r:   $alert-padding-x * 3;
+
+//badge
+$badge-font-size:                   .75em;
+$badge-font-weight:                 $font-weight-bold;
+$badge-color:                       $white;
+$badge-padding-y:                   .35em;
+$badge-padding-x:                   .65em;
+$badge-border-radius:               $border-radius;
+
+//contenedores
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+//position
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+);
+
+@import "../lib/bootstrap/scss/bootstrap.scss";
